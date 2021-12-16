@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../fontClasses.module.scss";
 
-const navLinkClasses = "mx-2";
+const navLinkClasses = "mx-2 hover:underline";
 
 export default function Navbar() {
   return (
