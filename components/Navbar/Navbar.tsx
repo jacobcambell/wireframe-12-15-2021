@@ -8,11 +8,11 @@ const navLinkClasses = "mx-2";
 export default function Navbar() {
   return (
     <div
-      className={`bg-primarybg flex justify-between items-center text-primarylight text-2xl ${styles.fancy}`}
+      className={`bg-primarybg py-3 px-10 flex justify-center lg:justify-between items-center text-primarylight text-xl ${styles.fancy}`}
     >
-      <p className="text-3xl mx-6">Women</p>
+      <img src="/logo.png" alt="" className="h-14 md:h-20" />
 
-      <div>
+      <div className="hidden lg:block">
         <Link href="/">
           <a className={navLinkClasses}>Database</a>
         </Link>
