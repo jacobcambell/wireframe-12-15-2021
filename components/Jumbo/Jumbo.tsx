@@ -6,7 +6,7 @@ export default function Jumbo() {
     <div className="bg-primarybg py-5 px-5">
       <img src="/bannerlady.png" alt="" className="m-auto" />
 
-      <div className={`text-center text-primarylight`}>
+      <div className={`text-center text-primarylight lg:text-red-500`}>
         <p className={`text-3xl py-3 ${styles.fancy}`}>
           Welcome to Women World!
         </p>
