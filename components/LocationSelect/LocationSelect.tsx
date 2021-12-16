@@ -21,19 +21,23 @@ export default function LocationSelect() {
         id=""
         className="bg-primarybg border border-primarylight text-primarylight text-xl m-auto block w-full p-3 md:hidden"
       >
-        {locations.map((loc) => {
-          return <option value="">{loc}</option>;
+        {locations.map((loc, i) => {
+          return (
+            <option key={i} value="">
+              {loc}
+            </option>
+          );
         })}
       </select>
 
       <div className="hidden md:flex items-center justify-center">
-        {locations.map((loc) => {
+        {locations.map((loc, i) => {
           return (
-            <div>
-              <a className="text-xl mx-3 hover:underline" href="/">
+            <div key={i} className="flex">
+              <p className="text-xl mx-3 hover:underline cursor-pointer">
                 {loc}
-              </a>
-              //
+              </p>
+              {i < locations.length - 1 && <p>|</p>}
             </div>
           );
         })}
