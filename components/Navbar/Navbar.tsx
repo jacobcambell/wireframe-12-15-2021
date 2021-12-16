@@ -29,7 +29,7 @@ export default function Navbar() {
           <a className={navLinkClasses}>Workshop</a>
         </Link>
         <Link href="/">
-          <a className={navLinkClasses}>News</a>
+          <a className={`mr-5 ${navLinkClasses}`}>News</a>
         </Link>
 
         <button className="text-primarylight p-3 border boreder-primarylight">
